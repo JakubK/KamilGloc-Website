@@ -2,14 +2,110 @@
 
 body
 {
-	background-color: #273149;
+	background-color: #26324c;
+}
+
+*
+{
+	box-sizing: border-box;
 }
 
 .website-navigation
 {
   height: 70px;
   width: 100%;
-	background: #273149;
+	background: #26324c;
 	
 	padding: 10px;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.navigation-brand
+{
+	display: flex;
+	align-items: center;
+}
+
+.brand-text
+{
+	margin-left: 15px;
+	color: white;
+}
+
+.navigation-items
+{
+	list-style-type: none;
+	display: flex;
+}
+
+.navigation-item
+{
+	display: block;
+	padding: 0 20px 0 20px;
+	color: #95a5a6;
+	text-decoration: none;
+}
+
+.navigation-item:hover
+{
+	outline: none;
+	border: none;
+	border-color: transparent;
+	color: white;
+}
+
+.website-header
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+
+	height: 300px;
+	position: relative;
+}
+
+.header-title
+{
+	font-size: 32px;
+	line-height: 50px;
+}
+
+.header-subtitle
+{
+	font-size: 24px;
+}
+
+.header-buttons
+{
+	position: absolute;
+	bottom: 0;
+	left: 30px;
+}
+
+.media-button
+{
+	width: 40px;
+	height: 40px;
+}
+
+.button-bottom
+{
+	width: 60px;
+	background: transparent;
+	outline: none;
+	padding: 0;
+	border: none;
+
+	position: absolute;
+	left: calc(50% - 30px);
+}
+
+.button-bottom path
+{
+	fill: white;
 }
