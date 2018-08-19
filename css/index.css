@@ -1,0 +1,14 @@
+
+body
+{
+	background-color: #273149;
+}
+
+.website-navigation
+{
+  height: 70px;
+  width: 100%;
+	background: #273149;
+	
+	padding: 10px;
+}
