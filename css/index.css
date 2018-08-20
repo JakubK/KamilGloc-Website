@@ -172,6 +172,11 @@ body
 	position: relative;
 }
 
+.portfolio-item:hover
+{
+	cursor: pointer;
+}
+
 .item-image
 {
 	width: 100%;
@@ -204,6 +209,27 @@ body
 	height: 100%;
 	overflow: auto;
 	background-color: rgba(0,0,0,0.4);
+}
+
+.modal-image
+{
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.close
+{
+	position: fixed;
+	font-size: 30px;
+	right: 10%;
+	top: 10%;
+}
+
+.close:hover
+{
+	cursor: pointer;
+	color: gray;
 }
 
 #about
