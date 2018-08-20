@@ -25,7 +25,6 @@ function showModal(i)
 {
   return function()
   {
-    console.log('You clicked ' + i);
     for(var j = 0;j < portfolioModals.length;j++)
     {
       if(j != i)
@@ -48,5 +47,17 @@ function closeModal(i)
       portfolioModals[activeModal].style.display = 'none';
       activeModal = -1;
     }
+  }
+}
+
+var burger = document.getElementById('burger');
+burger.addEventListener('click', toggleBurger());
+
+var navigation = document.querySelector('.navigation-items');
+function toggleBurger()
+{
+  return function()
+  {
+    navigation.style.display = navigation.style.display == 'flex' ? 'none' : 'flex';
   }
 }
