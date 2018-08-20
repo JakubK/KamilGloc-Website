@@ -476,4 +476,20 @@ footer
 	{
 		height: 60px;
 	}
+
+	.header-frame
+	{
+		margin-top: 50px;
+	}
+
+	.header-buttons
+	{
+		position: static;
+		padding-top: 20px;
+	}
+
+	.button-bottom
+	{
+		bottom: -40px;
+	}
 }
