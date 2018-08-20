@@ -185,3 +185,19 @@ body
 	background-color: rgba(0,0,0,0.4);
 }
 
+#about
+{
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+}
+
+.about-frame
+{
+	width: 90%;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+}
