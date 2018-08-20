@@ -492,4 +492,15 @@ footer
 	{
 		bottom: -40px;
 	}
+
+	.portfolio-gallery
+	{
+		flex-direction: column;
+	}
+
+	.portfolio-item
+	{
+		width: 100%;
+		padding-top: 10px;
+	}
 }
