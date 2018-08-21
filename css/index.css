@@ -535,4 +535,24 @@ footer
 		width: 100%;
 		margin-top: 15px;
 	}
+
+	.contact-form
+	{
+		width: 100%;
+	}
+
+	.form-line
+	{
+		flex-direction: column;
+	}
+
+	.form-line input
+	{
+		margin-top: 10px;
+	}
+
+	.textbox, .textbox-large, .textarea
+	{
+		width: 100%;
+	}
 }
