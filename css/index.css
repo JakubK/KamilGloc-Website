@@ -10,6 +10,11 @@ body
 	box-sizing: border-box;
 }
 
+section
+{
+	padding-top: 80px;
+}
+
 .website-navigation
 {
   height: 70px;
@@ -294,7 +299,7 @@ body
 
 #about
 {
-	margin-top: 50px;
+	padding-top: 100px;
 	display: flex;
 	justify-content: center;
 }
@@ -502,5 +507,21 @@ footer
 	{
 		width: 100%;
 		padding-top: 10px;
+	}
+
+	.portfolio-modal
+	{
+		padding: 0;
+	}
+
+	.modal-image
+	{
+		width: 100%;
+		margin: 0;
+	}
+
+	#about .media-buttons
+	{
+		margin-top: 15px;
 	}
 }
