@@ -524,4 +524,15 @@ footer
 	{
 		margin-top: 15px;
 	}
+
+	.offer-details
+	{
+		flex-direction: column;
+	}
+
+	.detail
+	{
+		width: 100%;
+		margin-top: 15px;
+	}
 }
