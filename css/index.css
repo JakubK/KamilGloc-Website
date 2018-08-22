@@ -13,6 +13,13 @@ body
 section
 {
 	padding-top: 80px;
+	height: 900px;
+}
+
+.section-header
+{
+	color: white;
+	font-size: 3.5em;
 }
 
 .website-navigation
@@ -38,13 +45,15 @@ section
 
 .brand-logo
 {
-	height: 40px;
+	height: 60px;
 }
 
 .brand-text
 {
 	margin-left: 15px;
 	color: white;
+
+	font-size: 1.25em;
 }
 
 .navigation-items
@@ -52,12 +61,13 @@ section
 	list-style-type: none;
 	display: flex;
 	background: #26324c;
+	font-size: 1.25em;
 }
 
 .navigation-item
 {
 	display: block;
-	padding: 0 20px 0 20px;
+	padding: 0 15px 0 15px;
 	color: #95a5a6;
 	text-decoration: none;
 }
@@ -133,8 +143,8 @@ section
 
 .header-frame
 {
-	width: 90%;
-	height: 300px;
+	width: 70%;
+	height: 900px;
 	display: flex;
 	position: relative;
 	color: white;
@@ -146,13 +156,12 @@ section
 
 .header-title
 {
-	font-size: 32px;
-	line-height: 50px;
+	font-size: 4.25em;
 }
 
 .header-subtitle
 {
-	font-size: 24px;
+	font-size: 1.75em;
 }
 
 .header-buttons
@@ -212,8 +221,8 @@ section
 {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	width: 90%;
+	align-items: flex-start;
+	width: 70%;
 }
 
 .portfolio-gallery
@@ -229,6 +238,8 @@ section
 .portfolio-header
 {
 	align-self: flex-start;
+	font-size: 43px;
+	color: white;
 }
 
 .portfolio-item
@@ -252,7 +263,6 @@ section
 {
 	position: absolute;
 	bottom: 0;
-	height: 30px;
 	width: 100%;
 	background: rgba(0,0,0,0.5);
 
@@ -260,6 +270,10 @@ section
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+
+	padding: 1.25rem;
+
+	font-size: 1rem;
 }
 
 .portfolio-modal
@@ -302,31 +316,61 @@ section
 	padding-top: 100px;
 	display: flex;
 	justify-content: center;
+
+	height: 500px;
+	position: relative;
 }
 
 .about-frame
 {
-	width: 90%;
-	height: 200px;
+	width: 70%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: flex-start;
 }
 
+.about-header
+{
+	font-size: 43px;
+	color: white;
+}
+
+.about-text
+{
+	font-size: 22px;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	color: white;
+}
+
+.about-frame .media-buttons
+{
+	position: absolute;
+	bottom: 0;
+	left: 15%;
+}
+
 #offer
 {
 	display: flex;
 	justify-content: center;
+	height: 500px;
 }
 
 .offer-frame
 {
-	width: 90%;
+	width: 70%;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: space-between;
+}
+
+.offer-header
+{
+	font-size: 43px;
+	color: white;
 }
 
 .offer-details
@@ -345,7 +389,19 @@ section
 	align-items: center;
 	text-align: center;
 	width: 30%;
-	padding: 15px;
+	padding: 25px 15px 25px 15px;
+
+	color: white;
+}
+
+.detail h4
+{
+	font-size: 1.25rem;
+}
+
+.detail p
+{
+	font-size: 1rem;
 }
 
 .offer-icon
@@ -372,7 +428,13 @@ section
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: space-between;
-	width: 90%;
+	width: 70%;
+}
+
+.contact-header
+{
+	font-size: 43px;
+	color: white;
 }
 
 .contact-form
@@ -387,16 +449,33 @@ section
 	justify-content: space-between;
 }
 
+
 .textbox
 {
 	height: 60px;
 	width: 49%;
+	font-size: 1rem;
+
+	background-color: #37476D;
+	border: none;
+	outline: none;
+	padding: 10px;
+	border-radius: 10px;
+	color: #95A5A6;
 }
 
 .textbox-large
 {
 	width: 100%;
 	height: 60px;
+	font-size: 1rem;
+
+	background-color: #37476D;
+	border: none;
+	outline: none;
+	padding: 10px;
+	border-radius: 10px;
+	color: #95A5A6;
 }
 
 .textarea
@@ -405,6 +484,14 @@ section
 	height: 180px;
 	resize: none;
 	margin-top: 15px;
+	font-size: 1rem;
+
+	background-color: #37476D;
+	border: none;
+	outline: none;
+	padding: 10px;
+	border-radius: 10px;
+	color: #95A5A6;
 }
 
 .button-send
@@ -412,6 +499,14 @@ section
 	margin-top: 15px;
 	width: 180px;
 	height: 50px;
+	font-size: 1rem;
+
+	background-color: #37476D;
+	border: none;
+	outline: none;
+	padding: 10px;
+	border-radius: 10px;
+	color: #95A5A6;
 }
 
 footer
@@ -422,7 +517,7 @@ footer
 
 .footer-frame
 {
-	width: 90%;
+	width: 70%;
 	display: flex;
 	align-items: center;
 	padding-top: 10px;
@@ -435,6 +530,9 @@ footer
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	font-size: 23px;
+	color: white;
 }
 
 .button-scrollup
@@ -462,6 +560,15 @@ footer
 
 @media only screen and (max-width: 768px)
 {
+	.header-frame,
+	.portfolio-frame,
+	.about-frame,
+	.contact-frame,
+	.offer-frame
+	{
+		width: 90%;
+	}
+
 	.navigation-burger
 	{
 		display: flex;
@@ -475,6 +582,11 @@ footer
 		width: 100%;
 		top: 70px;
 		display: none;
+	}
+
+	.navigation-items.active
+	{
+		display: flex;
 	}
 
 	.navigation-item
@@ -520,9 +632,25 @@ footer
 		margin: 0;
 	}
 
+	#about
+	{
+		height: 600px;
+	}
+
 	#about .media-buttons
 	{
 		margin-top: 15px;
+	}
+
+	.about-frame .media-buttons
+	{
+		position: static;
+		align-self: center;
+	}
+
+	#offer
+	{
+		height: 900px;
 	}
 
 	.offer-details
