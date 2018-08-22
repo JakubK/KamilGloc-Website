@@ -10,7 +10,7 @@
 <body>
 	<nav class="website-navigation">
 		<div class="navigation-brand">
-			<img class="brand-logo" src="img/Logo_Kamel_Design_png.png"/>
+			<img class="brand-logo" src="img/Logo_Kamel_Design.png"/>
 			<label class="brand-text">Kamil Gloc</label>
 		</div>
 		<ul class="navigation-items">
@@ -49,12 +49,12 @@
 					<svg aria-hidden="true" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512" class="svg-inline--fa fa-facebook-f fa-w-9 fa-2x"><path fill="currentColor" d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229" class=""></path></svg>
 				</button>
 			</div>
-			<button onclick="location.href='#portfolio';" class="button-bottom" type="button">
+			<a href="#portfolio" class="button-bottom">
 				<svg aria-hidden="true" data-prefix="fas" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"
 					class="svg-inline--fa fa-angle-down fa-w-10 fa-5x">
-					<path fill="currentColor" d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path>
+					<path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path>
 				</svg>
-			</button>
+			</a>
 		</div>
 	</header>
 	<section id="portfolio">
@@ -62,21 +62,21 @@
 			<h2 class="section-header">Portfolio</h2>
 			<div class="portfolio-gallery">
 				<div class="portfolio-item">
-					<img class="item-image" src="img/Poster1.png" />
+					<img class="item-image" src="img/poster1.jpg" />
 					<div class="item-label">
 						<label>Musician</label>
 						<label>Kliknij na obrazek</label>
 					</div>
 				</div>
 				<div class="portfolio-item">
-					<img class="item-image" src="img/Poster2.png" />
+					<img class="item-image" src="img/poster2.jpg" />
 					<div class="item-label">
 						<label>ReTo</label>
 						<label>Kliknij na obrazek</label>
 					</div>
 				</div>
 				<div class="portfolio-item">
-					<img class="item-image" src="img/Poster3.png" />
+					<img class="item-image" src="img/poster3.jpg" />
 					<div class="item-label">
 						<label>Live trwa</label>
 						<label>Kliknij na obrazek</label>
@@ -91,11 +91,11 @@
 			</div>
 			<div class="portfolio-modal">
 				<span class="close">&times;</span>
-				<img class="modal-image" src="img/BigPoster2.png"/>
+				<img class="modal-image" src="img/BigPoster2.jpg"/>
 			</div>
 			<div class="portfolio-modal">
 				<span class="close">&times;</span>
-				<img class="modal-image" src="img/BigPoster3.png"/>
+				<img class="modal-image" src="img/BigPoster3.jpg"/>
 			</div>
 		</div>
 	</section>
@@ -167,7 +167,7 @@
 				<br/>
 				<textarea class="textarea" placeholder="Opis..."></textarea>
 				<br/>
-				<button class="button-send">Send</button>
+				<button class="button-send">Wyślij</button>
 			</form>
 		</div>
 	</section>
@@ -183,12 +183,13 @@
 			</div>
 			<div class="footer-copyright">
 				<label>2018 &copy; Jakub Kuniszewski </label>
-				<button class="button-scrollup">
+				<a class="button-scrollup" href="#home">
 					<svg aria-hidden="true" data-prefix="fas" data-icon="angle-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-angle-up fa-w-10 fa-3x"><path fill="currentColor" d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z" class=""></path></svg>
-				</button>
+				</a>
 			</div>
 		</div>
 	</footer>
 	<script src="js/index.js"></script>
+	<script src="js/iscroll.js"></script>
 </body>
 </html>

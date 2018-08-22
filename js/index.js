@@ -66,6 +66,5 @@ function toggleBurger()
     {
       navigation.classList.add('active');
     }
-    //navigation.style.display = navigation.style.display == 'flex' ? 'none' : 'flex';
   }
 }
