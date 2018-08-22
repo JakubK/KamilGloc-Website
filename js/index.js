@@ -58,6 +58,14 @@ function toggleBurger()
 {
   return function()
   {
-    navigation.style.display = navigation.style.display == 'flex' ? 'none' : 'flex';
+    if(navigation.classList.contains('active'))
+    {
+      navigation.classList.remove('active');
+    }
+    else
+    {
+      navigation.classList.add('active');
+    }
+    //navigation.style.display = navigation.style.display == 'flex' ? 'none' : 'flex';
   }
 }
