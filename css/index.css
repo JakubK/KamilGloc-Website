@@ -1,8 +1,13 @@
 @import url('reset.css');
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400');
+
 body
 {
 	background-color: #26324c;
+
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
 }
 
 *
@@ -50,9 +55,7 @@ section
 
 .brand-text
 {
-	margin-left: 15px;
 	color: white;
-
 	font-size: 1.25em;
 }
 
@@ -157,11 +160,15 @@ section
 .header-title
 {
 	font-size: 4.25em;
+	font-weight: 100;
+	text-align: center;
 }
 
 .header-subtitle
 {
 	font-size: 1.75em;
+	font-weight: 100;
+	text-align: center;
 }
 
 .header-buttons
@@ -181,6 +188,19 @@ section
 	outline: none;
 }
 
+.media-button:hover
+{
+	background: transparent;
+	border: 2px solid white;
+
+	cursor: pointer;
+}
+
+.media-button:hover path
+{
+	fill: white;
+}
+
 .media-button svg
 {
 	width: 24px;
@@ -194,16 +214,25 @@ section
 
 .button-bottom
 {
-	width: 60px;
+	width: 40px;
 	background: transparent;
 	outline: none;
 	padding: 0;
 	border: none;
 
 	position: absolute;
-	left: calc(50% - 30px);
 	bottom: 0;
+
+	transition-duration: 0.5s;
+	transition-property: width, bottom;
 }
+
+.button-bottom:hover
+{
+	width: 60px;
+	bottom: -20px;
+}
+
 
 .button-bottom path
 {
@@ -215,6 +244,7 @@ section
 	margin-top: 50px;
 	display: flex;
 	justify-content: center;
+	height: auto;
 }
 
 .portfolio-frame
@@ -253,6 +283,12 @@ section
 	cursor: pointer;
 }
 
+.portfolio-item:hover .item-label
+{
+	cursor: pointer;
+	opacity: 1;
+}
+
 .item-image
 {
 	width: 100%;
@@ -261,6 +297,8 @@ section
 
 .item-label
 {
+	transition: opacity 0.5s;
+	opacity: 0;
 	position: absolute;
 	bottom: 0;
 	width: 100%;
@@ -338,6 +376,7 @@ section
 
 .about-text
 {
+	font-weight: 100;
 	font-size: 22px;
 	line-height: 1.5;
 	letter-spacing: 1px;
@@ -397,6 +436,7 @@ section
 .detail h4
 {
 	font-size: 1.25rem;
+	font-weight: 100;
 }
 
 .detail p
@@ -537,8 +577,6 @@ footer
 
 .button-scrollup
 {
-	width: 50px;
-	height: 50px;
 	background: #1f2b44;
 	border-radius: 100%;
 	outline: none;
@@ -556,6 +594,16 @@ footer
 .button-scrollup  path
 {
 	fill: white;
+}
+
+.button-scrollup:hover
+{
+	background: white;
+}
+
+.button-scrollup:hover path
+{
+	fill: #1f2b44;
 }
 
 @media only screen and (max-width: 768px)
@@ -682,5 +730,17 @@ footer
 	.textbox, .textbox-large, .textarea
 	{
 		width: 100%;
+	}
+
+	.footer-frame
+	{
+		flex-direction: column-reverse;
+		text-align: center;
+	}
+
+	.footer-copyright
+	{
+		flex-direction: column-reverse;
+		white-space: nowrap;
 	}
 }
