@@ -38,7 +38,7 @@ section
 	top: 0;
 	z-index: 1;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 }
 
@@ -630,6 +630,11 @@ footer
 	.offer-frame
 	{
 		width: 90%;
+	}
+
+	.website-navigation
+	{
+		justify-content: space-between;
 	}
 
 	.navigation-burger
