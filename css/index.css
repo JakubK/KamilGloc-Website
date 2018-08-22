@@ -171,6 +171,22 @@ section
 	text-align: center;
 }
 
+.button-contact
+{
+	margin-top: 10px;
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 5px;
+	background: #3498db;
+	font-weight: 100;
+}
+
+.button-contact:hover
+{
+	background: #2980b9;
+}
+
 .header-buttons
 {
 	position: absolute;
@@ -557,11 +573,17 @@ section
 	padding: 10px;
 	border-radius: 10px;
 	color: #95A5A6;
+
+	transition-property: width height;
+	transition-duration: 0.5s;
 }
 
 .button-send:hover
 {
 	cursor: pointer;
+
+	width: 270px;
+	height: 75px;
 }
 
 footer

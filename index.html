@@ -43,6 +43,9 @@
 		<div class="header-frame">
 			<h2 class="header-title">Graphic Designer</h2>
 			<p class="header-subtitle">Napisz do mnie już dziś i zamów grafikę marzeń</p>
+			<a href="#contact" class="button-contact">
+				Napisz do mnie
+			</a>
 			<div class="header-buttons">
 				<button onclick="location.href='https://www.behance.net/figaro20040cfd'" class="media-button" type="button">
 					<svg aria-hidden="true" data-prefix="fab" data-icon="behance" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-behance fa-w-18 fa-2x"><path fill="currentColor" d="M232 237.2c31.8-15.2 48.4-38.2 48.4-74 0-70.6-52.6-87.8-113.3-87.8H0v354.4h171.8c64.4 0 124.9-30.9 124.9-102.9 0-44.5-21.1-77.4-64.7-89.7zM77.9 135.9H151c28.1 0 53.4 7.9 53.4 40.5 0 30.1-19.7 42.2-47.5 42.2h-79v-82.7zm83.3 233.7H77.9V272h84.9c34.3 0 56 14.3 56 50.6 0 35.8-25.9 47-57.6 47zm358.5-240.7H376V94h143.7v34.9zM576 305.2c0-75.9-44.4-139.2-124.9-139.2-78.2 0-131.3 58.8-131.3 135.8 0 79.9 50.3 134.7 131.3 134.7 61.3 0 101-27.6 120.1-86.3H509c-6.7 21.9-34.3 33.5-55.7 33.5-41.3 0-63-24.2-63-65.3h185.1c.3-4.2.6-8.7.6-13.2zM390.4 274c2.3-33.7 24.7-54.8 58.5-54.8 35.4 0 53.2 20.8 56.2 54.8H390.4z" class=""></path></svg>
@@ -159,15 +162,15 @@
 	<section data-aos="fade-up" id="contact">
 		<div class="contact-frame">
 			<h2 class="section-header">Kontakt</h2>
-			<form class="contact-form" method="POST">
+			<form class="contact-form" method="POST" action="https://formspree.io/Kamil_gloc@wp.pl">
 				<div class="form-line">
-					<input id="name" class="textbox" placeholder="Imię i Nazwisko" type="text"/>
-					<input id="email" class="textbox" placeholder="E-mail" type="text"/>
+					<input name="name" id="name" class="textbox" placeholder="Imię i Nazwisko" type="text"/>
+					<input name="email" id="email" class="textbox" placeholder="E-mail" type="text"/>
 				</div>
 				<br/>
-				<input id="subject" class="textbox-large" placeholder="Temat wiadomości" type="text"/>
+				<input name="subject" id="subject" class="textbox-large" placeholder="Temat wiadomości" type="text"/>
 				<br/>
-				<textarea id="message" class="textarea" placeholder="Opis..."></textarea>
+				<textarea name="message" id="message" class="textarea" placeholder="Opis..."></textarea>
 				<br/>
 				<button class="button-send">Wyślij</button>
 			</form>
