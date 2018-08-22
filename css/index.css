@@ -549,6 +549,11 @@ section
 	color: #95A5A6;
 }
 
+.button-send:hover
+{
+	cursor: pointer;
+}
+
 footer
 {
 	display: flex;
@@ -629,16 +634,32 @@ footer
 		position: absolute;
 		width: 100%;
 		top: 70px;
-		display: none;
+
+		height: 0;
+
+		transition: height 0.5s;
 	}
 
 	.navigation-items.active
 	{
 		display: flex;
+		height: 300px;
 	}
 
 	.navigation-item
 	{
+		height: 0;
+		opacity: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition-duration: 0.5s;
+		transition-property: height opacity;
+	}
+
+	.navigation-items.active .navigation-item
+	{
+		opacity: 1;
 		height: 60px;
 	}
 

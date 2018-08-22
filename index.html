@@ -6,6 +6,7 @@
 	<title>Kamil Gloc - UI/UX Designer</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 	<nav class="website-navigation">
@@ -37,7 +38,7 @@
 			</button>
 		</div>
 	</nav>
-	<header id="home" class="website-header">
+	<header data-aos="fade-up" id="home" class="website-header">
 		<div class="header-frame">
 			<h2 class="header-title">Graphic Designer</h2>
 			<p class="header-subtitle">Napisz do mnie już dziś i zamów grafikę marzeń</p>
@@ -57,7 +58,7 @@
 			</a>
 		</div>
 	</header>
-	<section id="portfolio">
+	<section data-aos="fade-up" id="portfolio">
 		<div class="portfolio-frame">
 			<h2 class="section-header">Portfolio</h2>
 			<div class="portfolio-gallery">
@@ -99,7 +100,7 @@
 			</div>
 		</div>
 	</section>
-	<section id="about">
+	<section data-aos="fade-up" id="about">
 		<div class="about-frame">
 			<h2 class="section-header">O mnie</h2>
 			<p class="about-text">
@@ -117,7 +118,7 @@
 			</div>
 		</div>
 	</section>
-	<section id="offer">
+	<section data-aos="fade-up" id="offer">
 		<div class="offer-frame">
 			<h2 class="section-header">Oferta</h2>
 			<div class="offer-details">
@@ -154,7 +155,7 @@
 			</div>
 		</div>
 	</section>
-	<section id="contact">
+	<section data-aos="fade-up" id="contact">
 		<div class="contact-frame">
 			<h2 class="section-header">Kontakt</h2>
 			<form class="contact-form" method="POST">
@@ -171,7 +172,7 @@
 			</form>
 		</div>
 	</section>
-	<footer>
+	<footer data-icon="fade-up">
 		<div class="footer-frame">
 			<div class="media-buttons">
 				<button class="media-button" type="button">
@@ -191,5 +192,27 @@
 	</footer>
 	<script src="js/index.js"></script>
 	<script src="js/iscroll.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+		AOS.init();
+		
+		AOS.init({
+  // Global settings
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+
+  // Settings that can be overriden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 400, // values from 0 to 3000, with step 50ms
+  duration: 1000, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+});
+  </script>
 </body>
 </html>
