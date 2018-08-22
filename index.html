@@ -11,7 +11,9 @@
 <body>
 	<nav class="website-navigation">
 		<div class="navigation-brand">
-			<img class="brand-logo" src="img/Logo_Kamel_Design.png"/>
+			<a href="#home">
+				<img  class="brand-logo" src="img/Logo_Kamel_Design.png"/>
+			</a>
 			<label class="brand-text">Kamil Gloc</label>
 		</div>
 		<ul class="navigation-items">
@@ -32,7 +34,6 @@
 			</li>
 		</ul>
 		<div class="navigation-burger">
-			Menu
 			<button id="burger" class="burger">
 				<span class="burger-segment"/>
 			</button>
@@ -160,13 +161,13 @@
 			<h2 class="section-header">Kontakt</h2>
 			<form class="contact-form" method="POST">
 				<div class="form-line">
-					<input class="textbox" placeholder="Imię i Nazwisko" type="text"/>
-					<input class="textbox" placeholder="E-mail" type="text"/>
+					<input id="name" class="textbox" placeholder="Imię i Nazwisko" type="text"/>
+					<input id="email" class="textbox" placeholder="E-mail" type="text"/>
 				</div>
 				<br/>
-				<input class="textbox-large" placeholder="Temat wiadomości" type="text"/>
+				<input id="subject" class="textbox-large" placeholder="Temat wiadomości" type="text"/>
 				<br/>
-				<textarea class="textarea" placeholder="Opis..."></textarea>
+				<textarea id="message" class="textarea" placeholder="Opis..."></textarea>
 				<br/>
 				<button class="button-send">Wyślij</button>
 			</form>
@@ -210,7 +211,7 @@
   duration: 1000, // values from 0 to 3000, with step 50ms
   easing: 'ease', // default easing for AOS animations
   once: false, // whether animation should happen only once - while scrolling down
-  mirror: false, // whether elements should animate out while scrolling past them
+  mirror: true, // whether elements should animate out while scrolling past them
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 });
   </script>

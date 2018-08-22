@@ -68,3 +68,74 @@ function toggleBurger()
     }
   }
 }
+
+var form = document.querySelector('.contact-form');
+form.addEventListener('submit', function(e)
+{
+  e.preventDefault();
+
+    var name = document.getElementById('name');
+    var email = document.getElementById('email');
+    var subject = document.getElementById('subject');
+    var message = document.getElementById('message');
+
+    var email_expression = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+
+    if(name.value.length < 3)
+    {
+      wrongInput(document.getElementById('name'), "Za krótkie imie");
+
+      return false;
+    }
+    else
+    {
+      goodInput(document.getElementById('name'));
+    }
+
+    if(!email_expression.test(email.value))
+    {
+      wrongInput(document.getElementById('email'), "Email niepoprawny");
+
+      return false;
+    }
+    else
+    {
+      goodInput(document.getElementById('email'));
+    }
+
+    if(subject.value.length < 15)
+    {
+      wrongInput(document.getElementById('subject'), "Za krótki temat wiadomości");
+      return false;
+    }
+    else
+    {
+      goodInput(document.getElementById('subject'));
+    }
+
+    if(message.value.length < 20)
+    {
+      wrongInput(document.getElementById('message'), "Treść wiadomości musi mieć długość minimum 20 znaków");
+      return false;
+    }
+    else
+    {
+      goodInput(document.getElementById('message'));
+    }
+  
+    form.submit();
+})
+
+function wrongInput(input, info)
+{
+  input.classList.remove('good');
+  input.classList.add('wrong');
+  input.value = "";
+  input.placeholder = info;
+}
+
+function goodInput(input)
+{
+  input.classList.remove('wrong');
+  input.classList.add('good');
+}

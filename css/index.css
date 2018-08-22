@@ -38,7 +38,7 @@ section
 	top: 0;
 	z-index: 1;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 }
 
@@ -532,6 +532,16 @@ section
 	padding: 10px;
 	border-radius: 10px;
 	color: #95A5A6;
+}
+
+.textbox.wrong, .textbox-large.wrong, .textarea.wrong
+{
+	border: 2px solid red;
+}
+
+.textbox.good, .textbox-large.good, .textarea.good
+{
+	border: 2px solid greenyellow;
 }
 
 .button-send
