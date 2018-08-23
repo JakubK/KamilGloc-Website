@@ -19,6 +19,7 @@ if(portfolioItems.length == portfolioModals.length)
   }
 }
 
+document.addEventListener('mousedown',closeModal(activeModal));
 document.addEventListener('keydown', closeModal(activeModal));
 
 function showModal(i)
