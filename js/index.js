@@ -1,4 +1,4 @@
-//Get all Portfolio items and assign click event to them
+//Modal Windows and Portfolio
 var portfolioItems = document.querySelectorAll('.portfolio-item');
 var portfolioModals = document.querySelectorAll('.portfolio-modal');
 
@@ -50,6 +50,7 @@ function closeModal(i)
   }
 }
 
+//Hamburger Menu
 var burger = document.getElementById('burger');
 burger.addEventListener('click', toggleBurger());
 
@@ -61,14 +62,17 @@ function toggleBurger()
     if(navigation.classList.contains('active'))
     {
       navigation.classList.remove('active');
+      burger.classList.remove('active');
     }
     else
     {
       navigation.classList.add('active');
+      burger.classList.add('active');
     }
   }
 }
 
+//Contact Form
 var form = document.querySelector('.contact-form');
 form.addEventListener('submit', function(e)
 {

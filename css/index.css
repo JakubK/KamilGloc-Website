@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,400');
 
+/*Common*/
+
 body
 {
 	background-color: #26324c;
@@ -20,6 +22,8 @@ section
 	padding-top: 80px;
 	height: 900px;
 }
+
+/*Navigation*/
 
 .section-header
 {
@@ -96,12 +100,12 @@ section
 	width: 35px;
 	height: 35px;
 
-	background: transparent;
 	outline: none;
 	padding: 0;
 	border: none;
 
 	position: relative;
+	background: transparent;
 }
 
 .burger:hover
@@ -123,11 +127,17 @@ section
 .burger::before
 {
 	top: 8px;
+	transform: rotateZ(0deg);
+	transition-property: transform top;
+	transition-duration: 0.5s;
 }
 
 .burger::after
 {
 	bottom: 8px;
+	transform: rotateZ(0deg);
+	transition-property: transform bottom;
+	transition-duration: 0.5s;
 }
 
 .burger-segment
@@ -136,7 +146,28 @@ section
 	width: 100%;
 	height: 3px;
 	background: white;
+	transition-property: background-color;
+	transition-duration: 0.5s;
 }
+
+.burger.active .burger-segment
+{
+	background: transparent;
+}
+
+.burger.active::before
+{
+	transform: rotateZ(45deg);
+	top: 16px;
+}
+
+.burger.active::after
+{
+	transform: rotateZ(-45deg);
+	bottom: 16px;
+}
+
+/*Home*/
 
 .website-header
 {
@@ -173,7 +204,7 @@ section
 
 .button-contact
 {
-	margin-top: 10px;
+	margin-top: 30px;
 	color: white;
 	text-decoration: none;
 	padding: 10px;
@@ -254,6 +285,8 @@ section
 {
 	fill: white;
 }
+
+/*Portfolio*/
 
 #portfolio
 {
@@ -365,6 +398,8 @@ section
 	color: gray;
 }
 
+/*About*/
+
 #about
 {
 	padding-top: 100px;
@@ -405,6 +440,8 @@ section
 	bottom: 0;
 	left: 15%;
 }
+
+/*Offer*/
 
 #offer
 {
@@ -469,6 +506,8 @@ section
 {
 	fill: white;
 }
+
+/*Contact*/
 
 #contact
 {
@@ -586,6 +625,8 @@ section
 	height: 75px;
 }
 
+/*Footer*/
+
 footer
 {
 	display: flex;
@@ -645,6 +686,8 @@ footer
 
 @media only screen and (max-width: 768px)
 {
+	/*Common*/
+
 	.header-frame,
 	.portfolio-frame,
 	.about-frame,
@@ -653,6 +696,8 @@ footer
 	{
 		width: 90%;
 	}
+
+	/*Navigation*/
 
 	.website-navigation
 	{
@@ -700,6 +745,8 @@ footer
 		height: 60px;
 	}
 
+	/*Home*/
+
 	.header-frame
 	{
 		margin-top: 50px;
@@ -715,6 +762,8 @@ footer
 	{
 		bottom: -40px;
 	}
+
+	/*Portfolio*/
 
 	.portfolio-gallery
 	{
@@ -738,6 +787,8 @@ footer
 		margin: 0;
 	}
 
+	/*About*/
+
 	#about
 	{
 		height: 600px;
@@ -754,6 +805,8 @@ footer
 		align-self: center;
 	}
 
+	/*Offer*/
+
 	#offer
 	{
 		height: 900px;
@@ -769,6 +822,8 @@ footer
 		width: 100%;
 		margin-top: 15px;
 	}
+
+	/*Contact*/
 
 	.contact-form
 	{
@@ -789,6 +844,8 @@ footer
 	{
 		width: 100%;
 	}
+
+	/*Footer*/
 
 	.footer-frame
 	{
