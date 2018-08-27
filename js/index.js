@@ -11,6 +11,8 @@ if(portfolioItems.length == portfolioModals.length)
   for(var i = 0;i < portfolioItems.length;i++)
   {
     portfolioItems[i].addEventListener('click', showModal(i));
+    portfolioModals[i].addEventListener('keydown', closeModal(activeModal));
+    portfolioModals[i].addEventListener('click', closeModal(activeModal));
   }
 
   for(var i = 0;i < closeButtons.length;i++)
@@ -18,9 +20,6 @@ if(portfolioItems.length == portfolioModals.length)
     closeButtons[i].addEventListener('click',closeModal(i));
   }
 }
-
-document.addEventListener('mousedown',closeModal(activeModal));
-document.addEventListener('keydown', closeModal(activeModal));
 
 function showModal(i)
 {
